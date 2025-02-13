@@ -85,16 +85,13 @@ nav ul li a:hover {
 
 /* Ensure the Join Now button is properly aligned */
 .btn {
-    display: inline-block;
     background: #f39c12;
-    padding: 12px 20px;
-    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
     color: white;
     border-radius: 5px;
     font-weight: bold;
-    text-decoration: none;
     transition: background 0.3s;
-    text-align: center; /* Ensures text is centered */
 }
 
 .btn:hover {
@@ -154,25 +151,18 @@ nav ul li a:hover {
 
 /* Make sure it's centered properly */
 .hero .btn {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content; /* Keeps it from stretching */
-    margin-left: auto;
-    margin-right: auto;
+    padding: 12px 25px;
+    font-size: 18px;
+    background: #f39c12;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
 }
 .hero .btn:hover {
     background: #9dff00;
 }
-
-/* Responsive Fix for Mobile Screens */
-@media (max-width: 768px) {
-    .hero .btn {
-        font-size: 16px; /* Reduce size for smaller screens */
-        padding: 10px 18px; /* Adjust padding */
-        width: auto; /* Prevents overflow */
-    }
 
 
 
