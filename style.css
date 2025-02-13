@@ -620,30 +620,6 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-
-/* 🌟 CONTACT */
-.contact {
-    text-align: center;
-    padding: 50px;
-    background: white;
-    color: black;
-}
-
-#contact-form input,
-#contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#contact-form button {
-    background: gold;
-    color: black;
-    padding: 12px 20px;
-    border: none;
-}
-
 /* 🌟 Footer */
 footer {
     background: #222;
