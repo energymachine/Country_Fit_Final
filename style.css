@@ -672,7 +672,7 @@ footer {
     margin-bottom: 30px;
 }
 
-/* Layout similar to Classes */
+/* Ensure branch section images remain consistent */
 .branch-container {
     display: flex;
     justify-content: center;
@@ -682,24 +682,15 @@ footer {
     margin: auto;
 }
 
-/* Make Entire Image Clickable */
+/* Standardizing the branch card sizes */
 .branch-card {
-    width: 220px; /* Matches class images */
-    height: 220px;
+    width: 220px; /* Fixed width */
+    height: 220px; /* Fixed height */
     position: relative;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-decoration: none; /* Remove link underline */
-}
-
-/* Ensure images fill the space */
-.branch-card img {
-    margin-top: 10%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    text-decoration: none;
 }
 
 /* Overlay Effect */
@@ -719,14 +710,27 @@ footer {
     opacity: 0.8;
 }
 
-/* Responsive */
+/* Ensure all images fill the container properly */
+.branch-card img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; /* Prevents stretching */
+    display: block;
+}
+
+/* Ensure proper scaling on smaller screens */
 @media (max-width: 768px) {
     .branch-container {
         flex-direction: column;
         align-items: center;
     }
-
+    
     .branch-card {
-        width: 90%;
+        width: 90%; /* Makes them responsive */
+        max-width: 220px;
+        height: auto;
     }
 }
+
+
+
