@@ -595,7 +595,7 @@ footer {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    max-width: 1000px;
+    max-width: 100px;
     margin: auto;
 }
 
