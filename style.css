@@ -617,7 +617,7 @@ footer {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    max-width: 100px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -640,6 +640,17 @@ footer {
     object-fit: cover;
     display: block;
 }
+
+.branch-image {
+    width: 100%; /* Makes sure it adjusts to the container width */
+    max-width: 300px; /* Limits size to avoid stretching */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image fills the box without distortion */
+    display: block;
+    margin: auto; /* Centers the image */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
 
 /* Overlay Effect */
 .branch-overlay {
