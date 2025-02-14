@@ -651,7 +651,12 @@ footer {
     border-radius: 10px; /* Optional: Adds rounded corners */
 }
 
-
+.branch-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+    
 /* Overlay Effect */
 .branch-overlay {
     position: absolute;
