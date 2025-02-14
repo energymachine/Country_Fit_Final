@@ -632,14 +632,6 @@ footer {
     text-decoration: none; /* Remove link underline */
 }
 
-/* Ensure images fill the space */
-.branch-card img {
-    margin-top: 10%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
 
 .branch-image {
     width: 100%; /* Makes sure it adjusts to the container width */
