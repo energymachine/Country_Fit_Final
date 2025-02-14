@@ -549,26 +549,6 @@ nav ul li a:hover {
 
 
 
-/* 🌟 MEMBERSHIP */
-.membership {
-    
-    text-align: center;
-    padding: 50px;
-}
-
-.plans {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.plan {
-    background: white;
-    color: black;
-    padding: 20px;
-    border-radius: 10px;
-}
 
 /* 🌟 Footer */
 footer {
