@@ -641,21 +641,21 @@ footer {
     }
 }
 
-/* Mobile Menu Styles */
+/* Mobile Menu Button */
 .menu-btn {
-    display: none;
+    display: none; /* Hidden by default on large screens */
     font-size: 30px;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 20px;  /* Moves it to the right */
+    top: 15px;
     z-index: 1001;
 }
 
-/* Hide nav by default for mobile */
+/* Navigation Menu (Hidden by default on mobile) */
 #nav-menu {
     display: none;
     position: absolute;
@@ -667,6 +667,12 @@ footer {
     padding: 10px 0;
 }
 
+/* Show the menu when toggled */
+#nav-menu.show {
+    display: block;
+}
+
+/* Menu Items */
 #nav-menu ul {
     list-style: none;
     padding: 0;
@@ -684,7 +690,7 @@ footer {
     display: block;
 }
 
-/* Show menu button and hide normal nav for small screens */
+/* Show menu button on smaller screens */
 @media (max-width: 768px) {
     .menu-btn {
         display: block;
@@ -698,7 +704,3 @@ footer {
         display: block;
     }
 }
-
-
-
-
