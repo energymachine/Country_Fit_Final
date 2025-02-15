@@ -22,7 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
-    position: fixed;
+    position: relative;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -574,7 +574,7 @@ nav ul li a:hover {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     text-decoration: none; /* Remove link underline */
 }
 
