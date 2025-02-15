@@ -59,38 +59,6 @@ nav ul li a:hover {
     color: #9dff00;
 }
 
-/* Hides Menu Toggle Button on Desktop */
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-}
-
-/* Mobile & Tablet Screens */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Initially hidden */
-        flex-direction: column;
-        background-color: black;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .nav-links.active {
-        display: flex; /* Show when active */
-    }
-
-    .menu-toggle {
-        display: block; /* Show toggle button on mobile */
-    }
-
 /* Ensure the Join Now button is properly aligned */
 .btn {
     background: #f39c12;
