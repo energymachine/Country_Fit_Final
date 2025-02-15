@@ -46,18 +46,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-function checkOrientation() {
-    const rotateMessage = document.getElementById("rotate-message");
-
-    if (window.innerHeight > window.innerWidth) {
-        rotateMessage.style.display = "flex"; // Show in portrait mode
-    } else {
-        rotateMessage.style.display = "none"; // Hide in landscape mode
-    }
-}
-
-// Check when page loads
-checkOrientation();
-
-// Check when screen rotates
-window.addEventListener("resize", checkOrientation);
