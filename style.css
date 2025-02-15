@@ -29,7 +29,7 @@ header {
 }
 
 .logo img {
-    width: 240px;
+    width: 120px;
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
