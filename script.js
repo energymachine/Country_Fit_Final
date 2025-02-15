@@ -19,10 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    function toggleMenu() {
-    const nav = document.querySelector('.nav-links');
-    nav.classList.toggle('active');
-}
 
     // Fix for Gallery Scroll Issue
     const galleryContent = document.querySelector(".gallery-content");
