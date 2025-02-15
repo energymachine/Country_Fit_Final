@@ -18,7 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
             video.currentTime = 0; // Reset video to start
         });
     });
-    
+
+    function toggleMenu() {
+    const nav = document.querySelector('.nav-links');
+    nav.classList.toggle('active');
+}
 
     // Fix for Gallery Scroll Issue
     const galleryContent = document.querySelector(".gallery-content");
