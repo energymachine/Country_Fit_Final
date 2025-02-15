@@ -149,6 +149,7 @@ nav ul li a:hover {
 
 .about img {
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
     max-width: 800px;
     cursor: pointer;
