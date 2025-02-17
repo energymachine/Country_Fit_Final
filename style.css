@@ -79,7 +79,6 @@ header {
     .nav-links {
         display: none; /* Hide menu items initially */
         flex-direction: column;
-        background: black;
         position: absolute;
         top: 50px;
         right: 20px;
