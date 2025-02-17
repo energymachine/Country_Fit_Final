@@ -74,12 +74,15 @@ header {
 @media (max-width: 1024px) {
     .menu-btn {
         display: block; /* Show on mobile */
+        position: absolute;
+        top: 50px;
+        right: 20px;
     }
 
     .nav-links {
         display: none; /* Hide menu items initially */
         flex-direction: column;
-        background: black;
+        background: rgba(0, 0, 0, 0.7);
         position: absolute;
         top: 50px;
         right: 20px;
