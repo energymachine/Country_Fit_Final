@@ -128,11 +128,10 @@ nav ul li a:hover {
 /* Center Button on Mobile & Tablets */
 @media (max-width: 1024px) {
     .btn {
-        max-width: 150px;
+        max-width: 100px;
         width: 50%;  /* Adjust width to look good */
-        margin: 10 left;  /* Center it */
+        margin: 10 auto;  /* Center it */
         text-align: center;
-border-radius: 20px;
     }
 }
 
