@@ -74,7 +74,6 @@ header {
 @media (max-width: 1024px) {
     .menu-btn {
         display: block; /* Show on mobile */
-        position: relative;
     }
 
     .nav-links {
@@ -121,6 +120,16 @@ nav ul li a:hover {
 
 .btn:hover {
     background: #9dff00;
+}
+
+/* Center Button on Mobile & Tablets */
+@media (max-width: 1024px) {
+    .btn {
+        display: block;
+        width: 80%;  /* Adjust width to look good */
+        margin: 10px auto;  /* Center it */
+        text-align: center;
+    }
 }
 
 /* 🌟 HERO SECTION (VIDEO + TEXT) */
