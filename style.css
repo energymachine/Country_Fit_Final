@@ -85,11 +85,11 @@ header {
         background: rgba(0, 0, 0, 0.7);
         position: absolute;
         top: 50px;
-        left: 20px;
+        right: 20px;
         width: 150px;
         padding: 10px;
         gap: 20px;
-        text-align: right;
+        text-align: left;
     }
 
     /* When active, show the menu */
@@ -128,9 +128,10 @@ nav ul li a:hover {
 /* Center Button on Mobile & Tablets */
 @media (max-width: 1024px) {
     .btn {
-        display: flexbox;
-        width: 50%;  /* Adjust width to look good */
-        margin: 5px auto;  /* Center it */
+        display: block;
+        max-width: 200px;
+        width: 70%;  /* Adjust width to look good */
+        margin: 0 auto;  /* Center it */
         text-align: center;
     }
 }
