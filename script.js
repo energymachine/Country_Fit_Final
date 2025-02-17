@@ -45,5 +45,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
+
+    if (menuBtn && navMenu) {
+        menuBtn.addEventListener("click", function () {
+            navMenu.classList.toggle("active"); // Show/Hide menu
+        });
+    }
+});
 
 
