@@ -38,26 +38,62 @@ header {
     transform: scale(1.1);
 }
 
-nav ul {
-    list-style: none;
+
+
+/* Default navbar styling */
+.navbar {
     display: flex;
-    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 10px 20px;
 }
 
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
+/* Hide the menu button on desktop */
+.menu-btn {
+    display: none; /* Default: Hidden */
+    font-size: 30px;
+    background: none;
+    border: none;
     color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 1001;
 }
 
-nav ul li a:hover {
-    color: #9dff00;
+/* Navigation links (Default: Visible) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
 }
+
+/* Make changes only for mobile & tablets */
+@media (max-width: 1024px) {
+    .menu-btn {
+        display: block; /* Show on mobile */
+    }
+
+    .nav-links {
+        display: none; /* Hide menu items initially */
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 150px;
+        padding: 10px;
+        text-align: right;
+    }
+
+    /* When active, show the menu */
+    .nav-links.active {
+        display: flex;
+    }
+}
+
 
 /* Ensure the Join Now button is properly aligned */
 .btn {
