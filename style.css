@@ -74,6 +74,7 @@ header {
 @media (max-width: 1024px) {
     .menu-btn {
         display: block; /* Show on mobile */
+        position: relative;
     }
 
     .nav-links {
@@ -85,6 +86,7 @@ header {
         right: 20px;
         width: 150px;
         padding: 10px;
+        gap: 20px;
         text-align: right;
     }
 
