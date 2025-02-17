@@ -94,6 +94,17 @@ header {
     }
 }
 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #9dff00;
+}
+
 
 /* Ensure the Join Now button is properly aligned */
 .btn {
