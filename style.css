@@ -85,7 +85,7 @@ header {
         background: rgba(0, 0, 0, 0.7);
         position: absolute;
         top: 50px;
-        right: 20px;
+        left: 20px;
         width: 150px;
         padding: 10px;
         gap: 20px;
