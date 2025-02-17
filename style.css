@@ -129,10 +129,9 @@ nav ul li a:hover {
 @media (max-width: 1024px) {
     .btn {
         display: block;
-        width: 80%;  /* Adjust width to look good */
+        width: 50%;  /* Adjust width to look good */
         margin: 10px auto;  /* Center it */
         text-align: center;
-        border-radius: 5px;
     }
 }
 
