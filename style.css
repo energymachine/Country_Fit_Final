@@ -130,7 +130,7 @@ nav ul li a:hover {
     .btn {
         max-width: 100px;
         width: 50%;  /* Adjust width to look good */
-        margin-left: 10px;  /* Center it */
+        margin: 0 auto;  /* Center it */
         text-align: center;
     }
 }
