@@ -147,6 +147,7 @@ nav ul li a:hover {
         max-width: 100px;
         width: 50%;  /* Adjust width to look good */
         text-align: center;
+        align-items: center;
         margin: 0 auto;
     }
     .bttn {
@@ -155,7 +156,6 @@ nav ul li a:hover {
         width: 90%;  /* Adjust width to look good */
         text-align: center;
         margin: 0 auto;
-        align-items: center;
         justify-content: center;
     }
     
