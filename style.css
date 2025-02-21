@@ -144,8 +144,8 @@ nav ul li a:hover {
     .btn-container {
         display: flex;
         justify-content: center;
-        max-width: 100px;
-        width: 50%;  /* Adjust width to look good */
+        max-width: 1000px;
+        width: 90%;  /* Adjust width to look good */
         text-align: center;
         align-items: center;
         margin: 0 auto;
@@ -156,7 +156,6 @@ nav ul li a:hover {
         width: 90%;  /* Adjust width to look good */
         text-align: center;
         margin: 0 auto;
-        justify-content: center;
     }
     
 }
