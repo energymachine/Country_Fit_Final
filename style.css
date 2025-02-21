@@ -125,6 +125,20 @@ nav ul li a:hover {
     background: #9dff00;
 }
 
+.bttn {
+    background: #f39c12;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.bttn:hover {
+    background: #9dff00;
+}
+
 /* Center Button on Mobile & Tablets */
 @media (max-width: 1024px) {
     .btn {
