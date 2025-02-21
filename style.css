@@ -1,4 +1,4 @@
-/* 🌟 Global Styles */
+r/* 🌟 Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ header {
     background: rgba(34, 34, 34, 0.9);
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 15px 5%;
     position: relative;
