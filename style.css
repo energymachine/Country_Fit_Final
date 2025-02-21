@@ -135,6 +135,14 @@ nav ul li a:hover {
         margin: 0 auto;
         justify-content: center;
     }
+    .bttn {
+        display: block;
+        max-width: 100px;
+        width: 90%;  /* Adjust width to look good */
+        text-align: center;
+        margin: 0 auto;
+        justify-content: center;
+    }
 }
 
 /* 🌟 HERO SECTION (VIDEO + TEXT) */
