@@ -143,13 +143,13 @@ nav ul li a:hover {
 /* Center Button on Mobile & Tablets */
 @media (max-width: 1024px) {
     .btn {
-        display: flex;
+        display: block;
         justify-content: center;
         max-width: 100px;
         width: 70%;  /* Adjust width to look good */
         text-align: center;
         align-items: center;
-        margin: 0 auto;
+        margin-left: 0 auto;
     }
     .bttn {
         display: block;
