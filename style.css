@@ -128,9 +128,9 @@ nav ul li a:hover {
 /* Center Button on Mobile & Tablets */
 @media (max-width: 1024px) {
     .btn {
+        display: flex;
         max-width: 100px;
         width: 50%;  /* Adjust width to look good */
-        margin: 0 auto;  /* Center it */
         text-align: center;
         justify-content: center;
     }
