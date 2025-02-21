@@ -154,8 +154,9 @@ nav ul li a:hover {
     .bttn {
         display: block;
         max-width: 500px;
-        width: 90%;  /* Adjust width to look good */
+        width: 70%;  /* Adjust width to look good */
         text-align: center;
+        align-items: center;
         margin: 0 auto;
     }
     
