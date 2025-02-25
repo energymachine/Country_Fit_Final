@@ -149,7 +149,7 @@ nav ul li a:hover {
         width: 50%;  /* Adjust width to look good */
         text-align: center;
         align-items: center;
-        margin: 0 auto;
+        margin: -10 auto;
     }
     .bttn {
         display: block;
