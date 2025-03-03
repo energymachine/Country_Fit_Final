@@ -26,8 +26,10 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-sizing: border-box; /* Ensures padding doesn't exceed width */
+    max-width: 100vw; /* Prevents overflow */
+    overflow-x: hidden; /* Hides any extra content */
 }
-
 .logo img {
     width: 120px;
     height: auto;
@@ -165,28 +167,33 @@ nav ul li a:hover {
 /* 🌟 HERO SECTION (VIDEO + TEXT) */
 .hero {
     position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    overflow: hidden;
+    width: 100vw;
+    height: 100vh; /* Ensures it takes full screen height */
+    overflow: hidden; /* Prevents scrolling issues */
+    margin: 0; /* Removes any margin */
+    padding: 0; /* Removes any padding */
 }
 
+/* 🌟 Fix Video */
 .hero video {
     position: absolute;
-    top: 50%;
+    top: 0; /* Aligns to top (no gap with header) */
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Ensure video is behind text */
-    opacity: 0.7; /* Make it slightly transparent for better text visibility */
+    transform: translateX(-50%); /* Centers video */
+    width: 100vw; /* Ensures it doesn't exceed screen width */
+    height: 100vh; /* Ensures it covers full height */
+    object-fit: cover; /* Prevents stretching */
+    z-index: -1; /* Keeps video behind text */
+    opacity: 0.7; /* Adjust for readability */
 }
+
+/* 🌟 Remove Any Unwanted Horizontal Scroll */
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    margin: 0; /* Ensures no extra spacing */
+    padding: 0; /* Ensures no extra spacing */
+}
+
 
 .hero .overlay {
     position: absolute;
