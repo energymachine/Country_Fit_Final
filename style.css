@@ -78,7 +78,7 @@ header {
         display: block; /* Show on mobile */
         position: absolute;
         top: 15px;
-        right: 10px;
+        left: 10px;
     }
 
     .nav-links {
