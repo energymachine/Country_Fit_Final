@@ -77,9 +77,8 @@ header {
     .menu-btn {
         display: block; /* Show on mobile */
         position: absolute;
-        top: 50px;
-        right: 20px;
-        margin: 0 auto;
+        top: 15px;
+        right: 10px;
     }
 
     .nav-links {
@@ -155,12 +154,21 @@ nav ul li a:hover {
     }
     .bttn {
         display: block;
-        max-width: 500px;
-        width: 70%;  /* Adjust width to look good */
+        max-width: 200px;
+        width: 100%;  /* Adjust width to look good */
         text-align: center;
         align-items: center;
-        margin: 0 auto;
+        margin: 10px auto;
     }
+    
+    header {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        justify-content: center; /* Center content */
+        padding: 10px 5%;
+    }
+
     
 }
 
