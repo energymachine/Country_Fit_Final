@@ -25,6 +25,50 @@ document.addEventListener("DOMContentLoaded", function () {
     const prevBtn = document.getElementById("prev");
     const nextBtn = document.getElementById("next");
 
+    document.addEventListener("DOMContentLoaded", function () {
+    const gallery = document.querySelector(".gallery-content");
+    let isDragging = false;
+    let startX, scrollLeft;
+
+    // Mouse & Touch Events
+    gallery.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        startX = e.pageX - gallery.offsetLeft;
+        scrollLeft = gallery.scrollLeft;
+    });
+
+    gallery.addEventListener("mouseleave", () => {
+        isDragging = false;
+    });
+
+    gallery.addEventListener("mouseup", () => {
+        isDragging = false;
+    });
+
+    gallery.addEventListener("mousemove", (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const x = e.pageX - gallery.offsetLeft;
+        const walk = (x - startX) * 2; // Increase sensitivity
+        gallery.scrollLeft = scrollLeft - walk;
+    });
+
+    // Touch events for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    gallery.addEventListener("touchstart", (e) => {
+        touchStartX = e.touches[0].clientX;
+    });
+
+    gallery.addEventListener("touchmove", (e) => {
+        touchEndX = e.touches[0].clientX;
+        gallery.scrollLeft += (touchStartX - touchEndX) * 1.5; // Adjust sensitivity
+        touchStartX = touchEndX;
+    });
+});
+
+
     let scrollAmount = 0;
     const scrollStep = 320; // Adjust this based on image width
 
