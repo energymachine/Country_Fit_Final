@@ -321,13 +321,6 @@ html, body {
     background: black;
 }
 
-/* 🌟 GALLERY CONTAINER */
-.gallery-container {
-    text-align: center;
-    padding: 50px;
-    background: black;
-}
-
 /* 🌟 GALLERY WRAPPER */
 .gallery-wrapper {
     display: flex;
@@ -394,7 +387,7 @@ html, body {
 
 /* 🌟 ENABLE SWIPE ON MOBILE & TABLET */
 @media (max-width: 1024px) {
-    .gallery-wrapper {
+    .gallery-content {
         overflow-x: auto; /* Allow horizontal swipe */
         scroll-snap-type: x mandatory;
         display: flex;
