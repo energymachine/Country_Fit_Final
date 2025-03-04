@@ -19,55 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-
     // Fix for Gallery Scroll Issue
     const galleryContent = document.querySelector(".gallery-content");
     const prevBtn = document.getElementById("prev");
     const nextBtn = document.getElementById("next");
-
-    document.addEventListener("DOMContentLoaded", function () {
-    const gallery = document.querySelector(".gallery-content");
-    let isDragging = false;
-    let startX, scrollLeft;
-
-    // Mouse & Touch Events
-    gallery.addEventListener("mousedown", (e) => {
-        isDragging = true;
-        startX = e.pageX - gallery.offsetLeft;
-        scrollLeft = gallery.scrollLeft;
-    });
-
-    gallery.addEventListener("mouseleave", () => {
-        isDragging = false;
-    });
-
-    gallery.addEventListener("mouseup", () => {
-        isDragging = false;
-    });
-
-    gallery.addEventListener("mousemove", (e) => {
-        if (!isDragging) return;
-        e.preventDefault();
-        const x = e.pageX - gallery.offsetLeft;
-        const walk = (x - startX) * 2; // Increase sensitivity
-        gallery.scrollLeft = scrollLeft - walk;
-    });
-
-    // Touch events for mobile
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    gallery.addEventListener("touchstart", (e) => {
-        touchStartX = e.touches[0].clientX;
-    });
-
-    gallery.addEventListener("touchmove", (e) => {
-        touchEndX = e.touches[0].clientX;
-        gallery.scrollLeft += (touchStartX - touchEndX) * 1.5; // Adjust sensitivity
-        touchStartX = touchEndX;
-    });
-});
-
 
     let scrollAmount = 0;
     const scrollStep = 320; // Adjust this based on image width
@@ -75,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateScroll() {
         const maxScroll = galleryContent.scrollWidth - galleryContent.clientWidth;
         scrollAmount = Math.max(0, Math.min(scrollAmount, maxScroll));
-        galleryContent.style.transform = `translateX(-${scrollAmount}px)`;
+        galleryContent.scrollLeft = scrollAmount; // Use scrollLeft instead of transform
     }
 
     nextBtn.addEventListener("click", function () {
@@ -87,9 +42,33 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollAmount -= scrollStep;
         updateScroll();
     });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
+    // ✅ SWIPE FUNCTIONALITY (Fix)
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    galleryContent.addEventListener("touchstart", (e) => {
+        touchStartX = e.touches[0].clientX;
+    });
+
+    galleryContent.addEventListener("touchmove", (e) => {
+        touchEndX = e.touches[0].clientX;
+        let swipeDistance = touchStartX - touchEndX;
+
+        // Swipe left (next)
+        if (swipeDistance > 50) {
+            scrollAmount += scrollStep;
+        } 
+        // Swipe right (previous)
+        else if (swipeDistance < -50) {
+            scrollAmount -= scrollStep;
+        }
+
+        updateScroll();
+        touchStartX = touchEndX; // Reset touch start
+    });
+
+    // Menu Toggle
     const menuBtn = document.getElementById("menu-toggle");
     const navMenu = document.getElementById("nav-menu");
 
@@ -99,5 +78,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-
-
